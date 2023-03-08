@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ComputerNetworkActivity">
+
+
+    <ScrollView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:background="@color/backgroundMainColor"
+        android:layout_marginBottom="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SELECT QUIZ"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginTop="20dp"
+                android:padding="8dp"
+                android:textSize="30sp"
+                android:background="@drawable/select_quiz_title_tv_bg"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_marginTop="15dp"
+                android:padding="6dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvApplication"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/application"
+                    android:gravity="center"
+                    android:textSize="30sp"
+                    android:padding="15dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/quiz_type_ripple"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/tvOsi"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/osi_model"
+                    android:gravity="center"
+                    android:textSize="30sp"
+                    android:padding="15dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/quiz_type_ripple"
+                    android:layout_weight="1"
+                    android:textColor="@color/textColor"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_marginTop="15dp"
+                android:padding="6dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvIntro"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/intro"
+                    android:gravity="center"
+                    android:textSize="30sp"
+                    android:padding="15dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/quiz_type_ripple"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/tvPhysical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/physical_layer"
+                    android:gravity="center"
+                    android:textSize="30sp"
+                    android:padding="15dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/quiz_type_ripple"
+                    android:layout_weight="1"
+                    android:textColor="@color/textColor"/>
+
+            </LinearLayout>
+
+            <com.google.android.gms.ads.AdView
+                android:id="@+id/adViewComputer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:adSize="LARGE_BANNER"
+                app:adUnitId="ca-app-pub-2248293766990577/6357427119"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginBottom="5dp"
+                app:layout_constraintTop_toBottomOf="@+id/textView"
+                app:layout_constraintVertical_bias="0.136" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_marginTop="15dp"
+                android:padding="6dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvTransport"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/transport_layer"
+                    android:gravity="center"
+                    android:textSize="30sp"
+                    android:padding="15dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/quiz_type_ripple"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/tvNetworking"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/network_layer"
+                    android:gravity="center"
+                    android:textSize="30sp"
+                    android:padding="15dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/quiz_type_ripple"
+                    android:layout_weight="1"
+                    android:textColor="@color/textColor"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_marginTop="15dp"
+                android:padding="6dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvDns"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/dns"
+                    android:gravity="center"
+                    android:textSize="30sp"
+                    android:padding="15dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/quiz_type_ripple"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/tvDhcp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/dhcp"
+                    android:gravity="center"
+                    android:textSize="30sp"
+                    android:padding="15dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/quiz_type_ripple"
+                    android:layout_weight="1"
+                    android:textColor="@color/textColor"/>
+
+            </LinearLayout>
+
+            <com.google.android.gms.ads.AdView
+                android:id="@+id/adViewComputer1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:adSize="LARGE_BANNER"
+                app:adUnitId="ca-app-pub-2248293766990577/8712143623"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginBottom="5dp"
+                app:layout_constraintTop_toBottomOf="@+id/textView"
+                app:layout_constraintVertical_bias="0.136" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_marginTop="15dp"
+                android:padding="6dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvHttp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/http"
+                    android:gravity="center"
+                    android:textSize="30sp"
+                    android:padding="15dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/quiz_type_ripple"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/tvSmtp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/smtp"
+                    android:gravity="center"
+                    android:textSize="30sp"
+                    android:padding="15dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/quiz_type_ripple"
+                    android:layout_weight="1"
+                    android:textColor="@color/textColor"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_marginTop="15dp"
+                android:padding="6dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvSnmp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/snmp"
+                    android:gravity="center"
+                    android:textSize="30sp"
+                    android:padding="15dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/quiz_type_ripple"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/tvSsh"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/ssh"
+                    android:gravity="center"
+                    android:textSize="30sp"
+                    android:padding="15dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/quiz_type_ripple"
+                    android:layout_weight="1"
+                    android:textColor="@color/textColor"/>
+
+            </LinearLayout>
+
+            <com.google.android.gms.ads.AdView
+                android:id="@+id/adViewComputer2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:adSize="LARGE_BANNER"
+                app:adUnitId="ca-app-pub-2248293766990577/1611818158"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginBottom="5dp"
+                app:layout_constraintTop_toBottomOf="@+id/textView"
+                app:layout_constraintVertical_bias="0.136" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_marginTop="15dp"
+                android:padding="6dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvIpv4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/ipv4"
+                    android:gravity="center"
+                    android:textSize="30sp"
+                    android:padding="15dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/quiz_type_ripple"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/tvIpv6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/ipv6"
+                    android:gravity="center"
+                    android:textSize="30sp"
+                    android:padding="15dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/quiz_type_ripple"
+                    android:layout_weight="1"
+                    android:textColor="@color/textColor"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_marginTop="15dp"
+                android:padding="6dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvWww"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/www"
+                    android:gravity="center"
+                    android:textSize="30sp"
+                    android:padding="15dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/quiz_type_ripple"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/tvIpsecurity"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/ip_security"
+                    android:gravity="center"
+                    android:textSize="30sp"
+                    android:padding="15dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/quiz_type_ripple"
+                    android:layout_weight="1"
+                    android:textColor="@color/textColor"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_marginTop="15dp"
+                android:padding="6dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvVpn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/vpn"
+                    android:gravity="center"
+                    android:textSize="30sp"
+                    android:padding="15dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/quiz_type_ripple"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/tvWireless"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/wireless"
+                    android:gravity="center"
+                    android:textSize="30sp"
+                    android:padding="15dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/quiz_type_ripple"
+                    android:layout_weight="1"
+                    android:textColor="@color/textColor"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

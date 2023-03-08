@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.PythonActivity">
+
+
+    <ScrollView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:background="@color/backgroundMainColor">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/select_quiz"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginTop="20dp"
+                android:padding="8dp"
+                android:textSize="30sp"
+                android:background="@drawable/select_quiz_title_tv_bg"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_marginTop="15dp"
+                android:padding="6dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvBasic"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/basic"
+                    android:gravity="center"
+                    android:textSize="30sp"
+                    android:padding="15dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/quiz_type_ripple"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/tvDataType"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/data_type"
+                    android:gravity="center"
+                    android:textSize="30sp"
+                    android:padding="15dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/quiz_type_ripple"
+                    android:layout_weight="1"
+                    android:textColor="@color/textColor"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:padding="6dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvDataStructure"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/data_structure"
+                    android:gravity="center"
+                    android:textSize="25sp"
+                    android:padding="15dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/quiz_type_ripple"
+                    android:layout_weight="1"
+                    android:textColor="@color/textColor"/>
+
+                <TextView
+                    android:id="@+id/tvList"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/quiz_type_ripple"
+                    android:text="@string/list"
+                    android:textSize="25sp"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:textColor="@color/textColor"/>
+
+            </LinearLayout>
+
+            <com.google.android.gms.ads.AdView
+                android:id="@+id/adViewPython"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:adSize="LARGE_BANNER"
+                app:adUnitId="ca-app-pub-2248293766990577/8461593731"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginBottom="5dp"
+                app:layout_constraintTop_toBottomOf="@+id/textView"
+                app:layout_constraintVertical_bias="0.136" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:padding="6dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvPython"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/about_python"
+                    android:gravity="center"
+                    android:textSize="25sp"
+                    android:padding="15dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/quiz_type_ripple"
+                    android:layout_weight="1"
+                    android:textColor="@color/textColor"/>
+
+                <TextView
+                    android:id="@+id/tvFuncation"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/function"
+                    android:gravity="center"
+                    android:textSize="25sp"
+                    android:padding="15dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/quiz_type_ripple"
+                    android:layout_weight="1"
+                    android:textColor="@color/textColor"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:padding="6dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvPackage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/package1"
+                    android:gravity="center"
+                    android:textSize="25sp"
+                    android:padding="15dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/quiz_type_ripple"
+                    android:layout_weight="1"
+                    android:textColor="@color/textColor"/>
+
+                <TextView
+                    android:id="@+id/tvString"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/string"
+                    android:gravity="center"
+                    android:textSize="25sp"
+                    android:padding="15dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/quiz_type_ripple"
+                    android:layout_weight="1"
+                    android:textColor="@color/textColor"/>
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
